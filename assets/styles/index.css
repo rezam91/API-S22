@@ -56,3 +56,15 @@ ul li img:last-of-type:hover {
 #first, #second, #third {
 
 }
+.ref-all {
+    border-radius: 10px;
+    padding: 20px 140px;
+    background-color:#4CAF50;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 600;
+}
+.ref-all:hover {
+    cursor: pointer;
+    background-color:#66BB6A ;
+}

@@ -20,3 +20,7 @@ const refreshOne = (num) => {
     }
     updateOne()
 }
+
+const refreshAll = () => {
+    updateFacts()
+}
