@@ -4,3 +4,51 @@
 .row {
     display: flex;
 }
+body {
+    margin: 0;
+}
+img {
+    display: block;
+}
+.container {
+    font-family: Ubuntu;
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+.hero {
+    border-radius: 40px;
+    margin: 20px auto;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+ul li {
+    background-color:aquamarine;
+    border-radius: 20px;
+    flex: 1;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+ul li img {
+    margin-left: auto;
+    margin-right: auto;
+}
+ul li img:last-of-type:hover {
+    cursor: pointer;
+}
+
+#factsWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#first, #second, #third {
+
+}
