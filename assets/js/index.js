@@ -11,12 +11,19 @@ const updateFacts = async () => {
     document.getElementById('factsWrapper').getElementsByTagName('div')[0].innerText = f1
     document.getElementById('factsWrapper').getElementsByTagName('div')[1].innerText = f2
     document.getElementById('factsWrapper').getElementsByTagName('div')[2].innerText = f3
+
+    document.getElementById('factsWrapper').getElementsByTagName('img')[1].style.display = 'none'
+    document.getElementById('factsWrapper').getElementsByTagName('img')[4].style.display = 'none'
+    document.getElementById('factsWrapper').getElementsByTagName('img')[7].style.display = 'none'
 }
 updateFacts()
 
 const refreshOne = (num) => {
+    document.getElementById('factsWrapper').getElementsByTagName('img')[3*num+1].style.display = 'unset'
+    document.getElementById('factsWrapper').getElementsByTagName('div')[num].innerText=""
     const updateOne = async () => {
         document.getElementById('factsWrapper').getElementsByTagName('div')[num].innerText = await getFact()
+        document.getElementById('factsWrapper').getElementsByTagName('img')[3*num+1].style.display = 'none'
     }
     updateOne()
 }
