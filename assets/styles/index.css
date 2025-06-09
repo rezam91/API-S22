@@ -17,7 +17,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     background-color: #F5F5F5;
-    /* border: 1px solid black; */
     padding: 20px 10px;
     border-radius: 20px;
 }
@@ -53,9 +52,7 @@ ul li img:last-of-type:hover {
     justify-content: space-between;
     gap: 20px;
 }
-#first, #second, #third {
 
-}
 .ref-all {
     border-radius: 10px;
     padding: 20px 140px;
