@@ -7,6 +7,12 @@ const updateFacts = async () => {
     // for (let i = 0; i<3; i++) {
     //     document.getElementById('factsWrapper').getElementsByTagName('div')[i].innerText =await getFact()
     // }
+    document.getElementById('factsWrapper').getElementsByTagName('img')[1].style.display = 'unset'
+    document.getElementById('factsWrapper').getElementsByTagName('img')[4].style.display = 'unset'
+    document.getElementById('factsWrapper').getElementsByTagName('img')[7].style.display = 'unset'
+    document.getElementById('factsWrapper').getElementsByTagName('div')[0].innerText = ""
+    document.getElementById('factsWrapper').getElementsByTagName('div')[1].innerText = ""
+    document.getElementById('factsWrapper').getElementsByTagName('div')[2].innerText = ""
     const [f1, f2, f3] = await Promise.all([getFact(),getFact(),getFact()])
     document.getElementById('factsWrapper').getElementsByTagName('div')[0].innerText = f1
     document.getElementById('factsWrapper').getElementsByTagName('div')[1].innerText = f2
