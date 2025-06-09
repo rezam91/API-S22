@@ -68,3 +68,18 @@ ul li img:last-of-type:hover {
     cursor: pointer;
     background-color:#66BB6A ;
 }
+.loading {
+    animation-name: loadingRotate;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+@keyframes loadingRotate {
+    from {
+        transform: rotate(0);
+        /* transform: translate(0); */
+    }
+    to {
+        transform: rotate(360deg);
+        /* transform: translate(100px); */
+    }
+}
