@@ -1,7 +1,12 @@
 const getFact = async () => {
-    const APIUrl = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
-    const APIJson = await APIUrl.json()
-    return APIJson.text
+    try {
+        const APIUrl = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
+        const APIJson = await APIUrl.json()
+        return APIJson.text
+    } catch {
+        alert('OUPS! Please Check your Connection and try again!')
+        return 'OUPS! Please Check your Connection and try again!'
+    }
 }
 const updateFacts = async () => {
     // for (let i = 0; i<3; i++) {
